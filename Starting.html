@@ -24,12 +24,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body> <!-- Tüm sayfa BODY etiketi içerisinde yazılır. -->
-    <h2><strong>Pusula Finans</strong></h2> <br>    <!-- Strong: Metini güçlendirir, kalınlaştırır. -->
-    <p>HTML Etiketleri</p>           <!-- Paragraf -->
+<body> <!-- Tum sayfa BODY etiketi icerisinde yazilir. -->
+    <h2><strong>Pusula Finans</strong></h2> <br>    <!-- Strong: Metini guclendirir, kalinlastirir. -->
+    <p>HTML Etiketleri</p>              <!-- Paragraf -->
+    <p><b>Paragraf 1</b></p>            <!-- b ile kalinlastirilir. -->
     <p> Paragraf 1</p>
-    <p> Paragraf 1</p>
-    <a href="http://www.pusulafinans.com"> Pusula Finans </a> <br>             <!-- a Etiketi ile link oluşturulur!!! -->
+    <a href="http://www.pusulafinans.com"> Pusula Finans </a> <br>             <!-- a Etiketi ile link olusturulur!!! -->
     <a href="http://kripto.pusulafinans.com">On Satislar</a> <br>
     <a href="http://wwww.pusulafinans.com" target="_blank"> Pusula Finans </a> <br>         <!-- Yeni sayfada link açma -->
     <a href="mailto:info@pusulafinans.com"> Mail to Pusula Finans</a> <br>          <!-- Mail linki verme -->
@@ -38,27 +38,52 @@
 
     <img src="https://www.pusulafinans.com/wp-content/uploads/2021/10/ana-sayfa-pusula-finans-banner-1024x1024.png" alt="Pusula Main" /> <br>
 
-    <button> BUTTON </button>
+    <button> BUTTON </button>       <!-- Button olusturmak -->
 
+    <!-- LİSTE ÖRNEKLERİ -->
     <ul>                            <!-- unordered list -->
-        <li>Liste</li>
+        <li>Liste</li>              <!-- li: listed item -->
         <li>Liste</li>
         <li>Liste</li>
     </ul>
 
+    <ul style="list-style-type:none">  <!-- baslardaki noktalar kaldiriliyor. Ayrica; square, disc ve circle gibi simgeler tanimlayabiliriz.-->
+        <li>Liste</li>
+        <li>Liste</li>
+        <li>Liste</li>       
+    </ul>
+
     <ol>                            <!-- ordered list -->
-        <li>Sıralı Liste</li>
-        <li>Sıralı Liste</li>
-        <li>Sıralı Liste</li>
+        <li>Sirali Liste</li>
+        <li>Sirali Liste</li>
+        <li>Sirali Liste</li>
     </ol>
 
-    <!-- <script> JavaScript Kodlar yazılır!! </script> -->
+    <ol type="A">
+        <li>Sirali Liste</li>
+        <li>Sirali Liste</li>
+        <li>                            <!-- Liste icerisinde liste -->
+            <ul>
+                <li>Liste</li>     
+                <li>Liste</li>
+                <li>Liste</li>
+            </ul>
+        </li>
+    </ol>
+
+    <ol type="I">
+        <li>Sirali Liste</li>
+        <li>Sirali Liste</li>
+        <li>Sirali Liste</li>
+    </ol>
+
+    <!-- <script> JavaScript Kodlar yazilir!! </script> -->
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/-LWjE4xQpCQ" title="YouTube video player" 
 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<!-- A <footer> element typically contains:
-
+<!--
+A <footer> element typically contains:
     authorship information
     copyright information
     contact information
@@ -66,6 +91,57 @@ frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media
     back to top links
     related documents
 -->
+
+<!-- FORM ÖRNEKLERİ -->
+<form action="#" method="get">
+    Username: <input type="text" name="uname">   
+    <br><br>
+    Password: <input type="password" name="pwd">
+    <br><br>
+    <button type="submit" value="submit">
+        Submit
+    </button>
+     
+    <button type="reset" value="reset">
+        Reset
+    </button>
+</form>
+
+<form action="/action_page.php" method="get">
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname"><br><br>
+    <input type="submit" value="Submit">
+  </form>
+
+  <ul>  <!--  ul>li.item$*4  ($) elementi ile siralanan listeler oto. olusturulur.  -->
+    <li class="item1"></li>
+    <li class="item2"></li>
+    <li class="item3"></li>
+    <li class="item4"></li>
+  </ul>
+
+
+<h2>EMMET ile elementler kisayol kullanarak olusturulur.</h2>
+<p>     + ile kardes oge olusturulur. !!Ayni hizzada!!</p>
+<p>     > ile icinde oge olusturulur.     !!Alt hizzada!!</p>
+<p>     ^ ile yukari cik oge olusturulur.   !!Ust hizzaya cikarir!!</p>
+<p>     * ile aynı ogeden istedigimiz adet olusturulur. Ornek: p*3 (3 Paragraf)</p>
+<p>     lorem  - lorem4 (4 kelime olusturur)</p>
+<p>     . ile class olusturulur.</p>
+<p>     # ile id olusturulur.</p>
+
+<!-- ORNEKLER -->
+<!-- h1+h2+p+p+h2+p+p+p veya kısaca h1+h2+p*2+h2+p*3 -->
+<!-- ul>li*3 -->
+<!-- ul>li*3^p (p en son yukari cikarak, ayni hizzaya gelir.)-->
+<!-- p>lorem4 -->
+<!-- h3+ul>li*3>lorem2^^p>lorem4^h3 -->
+<h2 class="deneme" id="deneme">Lorem, ipsum.</h2> <!--h2.deneme#deneme>lorem2 -->
+
+<p class="deneme"></p>
+
 
 </body>
 </html>
