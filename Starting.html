@@ -1,96 +1,134 @@
-<h1>FRONT-END START</h1>  <!-- 1. Başlık -->
-<h2>Pusula Finans</h2>  <!-- 2. Başlık -->
-<h3>Pusula Finans</h3>  <!-- 3. Başlık -->
-<h4>Pusula Finans</h4>  <!-- 4. Başlık -->
-<h5>Pusula Finans</h5>  <!-- 5. Başlık -->
-<h6>Pusula Finans</h6>  <!-- 6. Başlık -->
+<p id="head"></p>
+<h1>FRONT-END START</h1>    <!-- 1. Başlık -->
+<h2>Pusula Finans</h2>      <!-- 2. Başlık -->
+<h3>Pusula Finans</h3>      <!-- 3. Başlık -->
+<h4>Pusula Finans</h4>      <!-- 4. Başlık -->
+<h5>Pusula Finans</h5>      <!-- 5. Başlık -->
+<h6>Pusula Finans</h6>      <!-- 6. Başlık -->
 
 <!DOCTYPE html>         <!-- Dokümanın HTML dilinde olduğunu belirtir. -->
 <html lang="en">        <!-- Dokümanın dilini belirtir. -->
 <head>
-    <!-- HEAD ALTINDA BU ETİKETLER KULLANILIR! Title etiketini kullanmak, zorunludur.
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="refresh" content="5">  Siteyi 5 Saniyede Bir Refresh Eder!!  -->   
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 
-<title> 
+<!-- HEAD ALTINDA BU ETİKETLER KULLANILIR! Title etiketini kullanmak, zorunludur.
+<title>
 <meta>
 <style>
 <script>
 <noscript>
 <link>
 <base>
+-->
 
-    -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
 </head>
 <body> <!-- Tum sayfa BODY etiketi icerisinde yazilir. -->
     <h2><strong>Pusula Finans</strong></h2> <br>    <!-- Strong: Metini guclendirir, kalinlastirir. -->
     <p>HTML Etiketleri</p>              <!-- Paragraf -->
     <p><b>Paragraf 1</b></p>            <!-- b ile kalinlastirilir. -->
-    <p> Paragraf 1</p>
+
+<!-- style ile yaziya farklı karakterler verilir. -->     
+    <p style="color:red" >Lorem ipsum dolor sit amet.</p>
+    <p style="color: rgb(0, 255, 0)" >Lorem ipsum dolor sit amet.</p>
+    <p style="font-size:larger" >Lorem ipsum dolor sit amet.</p>
+
+<!-- strong ile yazi koyulastirilir. em ile yazi italik yapilir. -->    
+    <p> Lorem ipsum <strong>dolor sit</strong> amet consectetur <em>adipisicing elit.</em> Quidem, sed.</p>
+
+<hr>  <!-- Sayfada Cizgi Cekiyor. -->     
+
+<!-- Baska bir Sayfaya Link Verme --> 
+    <a href="connect.html">Connect Link</a> <br>
+<!-- Ayni Sayfa icerisinde Bir Yere Gitme --> 
+    <a href="#footer">Page Footer</a> <br>        <!-- id'ler # ile isaretlenir. -->
+
+<!-- Link Verme Etiketleri </script> -->   
     <a href="http://www.pusulafinans.com"> Pusula Finans </a> <br>             <!-- a Etiketi ile link olusturulur!!! -->
-    <a href="http://kripto.pusulafinans.com">On Satislar</a> <br>
     <a href="http://wwww.pusulafinans.com" target="_blank"> Pusula Finans </a> <br>         <!-- Yeni sayfada link açma -->
     <a href="mailto:info@pusulafinans.com"> Mail to Pusula Finans</a> <br>          <!-- Mail linki verme -->
-    <a href="tel:+905325320000">Tel to Pusula Finans</a> <br>                       <!-- Tel linki verme -->
-    <a href="http://wwww.pusulafinans.com" download="Media File"> Pusula Finans </a> <br>   <!-- Download linki verme -->
+    <a href="tel:+905325320000">Call to Pusula Finans</a> <br>                       <!-- Tel linki verme -->
+    <a href="http://wwww.pusulafinans.com" download="Media File"> Pusula Finans </a> <br><br>   <!-- Download linki verme -->
+    <!-- Resim ile link verme --> 
+    <a href="https://www.pusulafinans.com/" target="_blank">
+        <img src="https://www.pusulafinans.com/wp-content/uploads/2021/09/4-1-300x106.png">
+    </a>
+    <br><br>
+    <!-- Button ile link verme --> 
+    <a href="https://www.pusulafinans.com/" target="_blank">
+        <button> Pusula Finans Button </button> 
+    </a>
+    <br><br>
 
-    <img src="https://www.pusulafinans.com/wp-content/uploads/2021/10/ana-sayfa-pusula-finans-banner-1024x1024.png" alt="Pusula Main" /> <br>
+<!-- Div ile Blok Olusturulur. -->     
+    <div>
 
-    <button> BUTTON </button>       <!-- Button olusturmak -->
+    </div>
+<!-- Span ile Inline Element olusturulur. Hayali Kutu Olusturulur. -->
+<p>Lorem ipsum dolor sit amet <span style="color:red" > consectetur adipisicing</span> elit. Unde, quam?</p>    
 
-    <!-- LİSTE ÖRNEKLERİ -->
-    <ul>                            <!-- unordered list -->
-        <li>Liste</li>              <!-- li: listed item -->
-        <li>Liste</li>
-        <li>Liste</li>
-    </ul>
+<!-- <script> JavaScript Kodlar yazilir!! </script> -->
 
-    <ul style="list-style-type:none">  <!-- baslardaki noktalar kaldiriliyor. Ayrica; square, disc ve circle gibi simgeler tanimlayabiliriz.-->
-        <li>Liste</li>
-        <li>Liste</li>
-        <li>Liste</li>       
-    </ul>
+<!-- LİSTE ÖRNEKLERİ -->
+<ul>                            <!-- unordered list -->
+    <li>Liste</li>              <!-- li: listed item -->
+    <li>Liste</li>
+    <li>Liste</li>
+</ul>
 
-    <ol>                            <!-- ordered list -->
-        <li>Sirali Liste</li>
-        <li>Sirali Liste</li>
-        <li>Sirali Liste</li>
-    </ol>
+<ul style="list-style-type:none">  <!-- baslardaki noktalar kaldiriliyor. Ayrica; square, disc ve circle gibi simgeler tanimlayabiliriz.-->
+    <li>Liste</li>
+    <li>Liste</li>
+    <li>Liste</li>       
+</ul>
 
-    <ol type="A">
-        <li>Sirali Liste</li>
-        <li>Sirali Liste</li>
-        <li>                            <!-- Liste icerisinde liste -->
-            <ul>
-                <li>Liste</li>     
-                <li>Liste</li>
-                <li>Liste</li>
-            </ul>
-        </li>
-    </ol>
+<ol>                            <!-- ordered list -->
+    <li>Sirali Liste</li>
+    <li>Sirali Liste</li>
+    <li>Sirali Liste</li>
+</ol>
 
-    <ol type="I">
-        <li>Sirali Liste</li>
-        <li>Sirali Liste</li>
-        <li>Sirali Liste</li>
-    </ol>
+<ol type="A">
+    <li>Sirali Liste</li>
+    <li>Sirali Liste</li>
+    <li>                            <!-- Liste icerisinde liste -->
+        <ul>
+            <li>Liste</li>     
+            <li>Liste</li>
+            <li>Liste</li>
+        </ul>
+    </li>
+</ol>
 
-    <!-- <script> JavaScript Kodlar yazilir!! </script> -->
+<ol type="I">
+    <li>Sirali Liste</li>
+    <li>Sirali Liste</li>
+    <li>Sirali Liste</li>
+</ol>
+
+<!-- Gorsel Olusturma -->
+    <!-- Kendi deponu kullanarak gorsel olusturma -->  
+<img src="https://picsum.photos/600/300" alt=""> <br> <br>
+    <!-- Kendi deponu kullanarak gorsel olusturma -->
+<img src="images/1.jpg" alt="Lorem Picsum"> <br> <br>
+    <!-- Kendi deponu kullanarak istedigimiz olculerde gorsel olusturma -->
+<img width="200" height="200" src="images/2.jpg" alt="Lorem Picsum Edit"> <br> <br>
+    <!-- Title ile resmin üzerine mouse ile gelindiginde aciklama eklenir -->
+<img src="images/1.jpg" alt="Lorem Picsum" title="Lorem Picsum"> <br> <br>
+    <!-- Border ile resme cerceve eklenir -->
+<img src="images/1.jpg" alt="Lorem Picsum" border="3"> <br> <br>
+    <!-- Aling ile resim Left veya Right tarafa yaslanir -->
+<img src="images/2.jpg" align="right"> <br> <br>
+    <!-- Resme link vermek icin "a" tagi icerisine alinir. -->
+<a href="https://www.pusulafinans.com/">
+    <img src="images/1.jpg"> 
+</a> <br> <br>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/-LWjE4xQpCQ" title="YouTube video player" 
 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<!--
-A <footer> element typically contains:
-    authorship information
-    copyright information
-    contact information
-    sitemap
-    back to top links
-    related documents
--->
 
 <!-- FORM ÖRNEKLERİ -->
 <form action="#" method="get">
@@ -142,6 +180,16 @@ A <footer> element typically contains:
 
 <p class="deneme"></p>
 
-
+<!--
+A <footer> element typically contains:
+    authorship information
+    copyright information
+    contact information
+    sitemap
+    back to top links
+    related documents
+-->
+<p id="footer"></p>    <!-- Sayfa sonunu id ile ayarladik.-->
+<a href="#head">Page Head</a>
 </body>
 </html>
