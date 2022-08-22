@@ -10,21 +10,69 @@
   <body>
     <h1 class="text-danger">Hello, world!</h1>
     <div class="container">
-        <div class="row" align="center">
-            <div class="col-sm-4">Hello, world!</div>   <!-- sm boyut ve uzerindeki ekranlarda; EKRANDA 12/4: 3 ADET KOLON GOSTERILECEK! -->
-            <div class="col-sm-4">Hello, world!</div>
-            <div class="col-sm-4">Hello, world!</div>
-            <div class="col-sm-4">Hello, world!</div>
+        <div class="row" align="center">          <!-- ROW bulundugu yeri 12lik sutunlara boluyor. -->
+          <!-- 6 ESIT PARCAYA BOLUYORUZ -->
+            <div class="col-sm-6 col-md-4  col-lg-3 col-xl-2 bg-primary">Hello, world!</div>       <!-- sm boyut ve uzerindeki ekranlarda; EKRANDA 12/6: 2 ADET KOLON GOSTERILECEK! -->
+            <div class="col-sm-6  col-md-4  col-lg-3 col-xl-2 bg-secondary">Hello, world!</div>    <!-- md boyut ve uzerindeki ekranlarda; EKRANDA 12/4: 3 ADET KOLON GOSTERILECEK! --> 
+            <div class="col-sm-6  col-md-4  col-lg-3 col-xl-2 bg-success">Hello, world!</div>      <!-- lg boyut ve uzerindeki ekranlarda; EKRANDA 12/3: 4 ADET KOLON GOSTERILECEK! --> 
+            <div class="col-sm-6  col-md-4  col-lg-3 col-xl-2 bg-danger">Hello, world!</div>       <!-- xl boyut ekranlarda; EKRANDA 12/2: 6 ADET KOLON GOSTERILECEK! -->
+            <div class="col-sm-6  col-md-4  col-lg-3 col-xl-2 bg-warning">Hello, world!</div>
+            <div class="col-sm-6  col-md-4  col-lg-3 col-xl-2 bg-info">Hello, world!</div>
         </div>
         <br><br><br><br>
         <div class="row" align="center">
-            <div class="col">Hello, world!</div>
-            <div class="col">Hello, world!</div>
-            <div class="col">Hello, world!</div>
-            <div class="col">Hello, world!</div>
-            <div class="col">Hello, world!</div>
-            <div class="col">Hello, world!</div>
+            <div class="col-sm-2 bg-primary">Hello, world!</div>
+            <div class="col-sm-10 bg-secondary">Hello, world!</div>
         </div>
+        <br><br><br><br>
+        <div class="row" align="center">
+          <div class="col-sm-3 bg-primary">Hello, world!</div>
+          <div class="col-sm-4 bg-secondary">Hello, world!</div>
+          <div class="col-sm-5 bg-danger">Hello, world!</div>
+        </div>
+        <br><br><br><br>
+        <!-- ROW icinde ROW kullanımı!!! -->
+        <div class="row" align="center">
+          <div style="padding: 10px;" class="col-sm-4 bg-primary">Hello, world!</div>
+          <div class="col-sm-8 bg-secondary">Hello, world!
+            <div class="row">   <!-- 8 lik SUTUNU tekrar ayiriyoruz! -->
+              <div class="col-sm-4 bg-danger">Hello, world!</div>
+              <div class="col-sm-4 bg-warning">Hello, world!</div>
+              <div class="col-sm-4 bg-info">Hello, world!</div>
+            </div>
+          </div>
+        </div>
+    </div> <!-- CONTAINER END -->
+    <br><br><br><br>
+
+    <div class="container">
+      <div class="row">
+        <div align="center" class="col-sm-8">
+          <div class="row"> 
+            <div class="col-sm-8 bg-primary">
+              HELLO WORLD!
+            </div>
+            <div class="col-sm-4 bg-secondary">
+              HELLO WORLD!
+            </div>
+            <div class="col-sm-8 bg-primary">
+              HELLO WORLD!
+            </div>
+            <div class="col-sm-4 bg-secondary">
+              HELLO WORLD!
+            </div>
+            <div class="col-sm-8 bg-primary">
+              HELLO WORLD!
+            </div>
+            <div class="col-sm-4 bg-secondary">
+              HELLO WORLD!
+            </div>
+          </div>
+        </div>
+        <div align="center" class="col-sm-4 bg-info">
+          HELLO WORLD!
+        </div>
+      </div>
     </div>
 
 
